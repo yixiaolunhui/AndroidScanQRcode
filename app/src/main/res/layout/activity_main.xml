@@ -5,7 +5,7 @@
     android:background="@android:color/black"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.dalong.androidscanqrcode.MainActivity">
+    tools:context="com.dalong.androidscanqrcode.ScanActivity">
 
     <FrameLayout
         android:id="@+id/content_frame"

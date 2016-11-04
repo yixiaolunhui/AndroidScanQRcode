@@ -1,4 +1,4 @@
-package com.dalong.androidscanqrcode;
+package com.dalong.androidscanqrcode.view;
 
 import android.content.Context;
 import android.graphics.Canvas;

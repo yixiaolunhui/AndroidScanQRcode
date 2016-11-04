@@ -8,11 +8,13 @@ import android.os.Bundle;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.dalong.androidscanqrcode.util.SoundUtil;
+import com.dalong.androidscanqrcode.view.CustomViewFinderView;
 import com.dalong.scanqrcodelib.core.IViewFinder;
 import com.dalong.scanqrcodelib.view.ZXingScannerView;
 import com.google.zxing.Result;
 
-public class MainActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler {
+public class ScanActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler {
 
     private ZXingScannerView mScannerView;
     //重置扫描时间
@@ -21,8 +23,6 @@ public class MainActivity extends AppCompatActivity implements ZXingScannerView.
     private boolean isSound = false;
     //是否震动
     private boolean isVibrator = true;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements ZXingScannerView.
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                mScannerView.resumeCameraPreview(MainActivity.this);
+                mScannerView.resumeCameraPreview(ScanActivity.this);
             }
         }, SCAN_TIME);
     }

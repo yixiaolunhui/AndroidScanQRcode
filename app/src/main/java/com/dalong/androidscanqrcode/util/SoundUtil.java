@@ -1,8 +1,10 @@
-package com.dalong.androidscanqrcode;
+package com.dalong.androidscanqrcode.util;
 
 import android.content.Context;
 import android.media.AudioManager;
 import android.media.SoundPool;
+
+import com.dalong.androidscanqrcode.R;
 
 import java.util.HashMap;
 import java.util.Map;
